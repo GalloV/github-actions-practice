@@ -7,8 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  runs-on: ubuntu-latest
   testing_matrix:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node: [21,22]
