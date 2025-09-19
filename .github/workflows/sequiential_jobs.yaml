@@ -1,4 +1,4 @@
-name: Hello Actions
+name: Sequential Bye Action
 
 on: [push]
 
