@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "code-test": "jest"
+    "test": "jest"
   },
   "type":"module",
   "repository": {

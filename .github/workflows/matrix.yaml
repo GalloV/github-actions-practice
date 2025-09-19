@@ -1,0 +1,25 @@
+name: Matrix GitHub Actions
+
+on: [push]
+
+jobs:
+  testing_matrix:
+    strategy:
+      matrix:
+        node: [21,22]
+        os: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 22
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm code-test
+
+
+
+#jobs.<job_id>.strategy.matrix
